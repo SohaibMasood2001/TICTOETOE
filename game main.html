@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Teo Toa</title>
+  
+</head>
+
+<body>
+    <div class="game-main">
+        <span class="head">
+            <h2>Tic Toe Toe</h2>
+        </span>
+        <div class="box-main-div" id="game-boxes-div">
+            <button class="pl-box" id="b1"></button>
+            <button class="pl-box" id="b2"></button>
+            <button class="pl-box" id="b3"></button>
+            <button class="pl-box" id="b4"></button>
+            <button class="pl-box" id="b5"></button>
+            <button class="pl-box" id="b6"></button>
+            <button class="pl-box" id="b7"></button>
+            <button class="pl-box" id="b8"></button>
+            <button class="pl-box" id="b9"></button>
+        </div>
+        <div class="infos" id="score-info">
+            <table class="pt">
+                <tr>
+                    <th class="t-row" style="background-color: brown; color: rgb(255, 255, 255); border: none;">Player X
+                        Name</th>
+                    <td class="t-row" id="pl-x-n"
+                        style="background-color: rgb(210, 255, 77); color: black; border: none;">none</td>
+                </tr>
+                <tr>
+                    <th class="t-row" style="background-color: brown; color: rgb(255, 255, 255); border: none;">Player O
+                        Name</th>
+                    <td class="t-row" id="pl-o-n"
+                        style="background-color: rgb(210, 255, 77); color: black; border: none;">none</td>
+                </tr>
+                <tr>
+                    <th class="t-row" style="background-color: brown; color: rgb(255, 255, 255); border: none;">Next
+                        Turn:</th>
+                    <td class="t-row" id="pl-turn"
+                        style="background-color: rgb(210, 255, 77); color: black; border: none;">none</td>
+                </tr>
+                <tr>
+                    <th class="t-row" style="background-color: brown; color: rgb(255, 255, 255); border: none;">Player X
+                        Points: </th>
+                    <td class="t-row" id="pl-x-p"
+                        style="background-color: rgb(210, 255, 77); color: black; border: none;">0</td>
+                </tr>
+                <tr>
+                    <th class="t-row" style="background-color: brown; color: rgb(255, 252, 252); border: none;">Player O
+                        Points:</th>
+
+                    <td class="t-row" id="pl-o-p"
+                        style="background-color: rgb(210, 255, 77); color: black; border: none;">0</td>
+                </tr>
+            </table>
+            <Button id="reset-btn" onclick="reset()">Reset</Button>
+        </div>
+        <div class="result" id="result-id">Hello</div>
+        <div class="name-input" id="nm-in">
+            <h2 style="color: white; margin: 0%; margin-top: 10px; margin-bottom: 10px;">Player X Name</h2>
+            <input type="text" name="" id="pl-x-name-in" style="width:300px; height: 35px;"
+                placeholder="Enter Player X Name"><br>
+            <h2 style="color: white; margin: 0%;margin-top: 10px; margin-bottom: 10px;">Player O Name</h2>
+            <input type="text" name="" id="pl-o-name-in" style="width:300px; height: 35px;"
+                placeholder="Enter Player O Name"><br>
+            <button id="play" style="width:100px; height: 40px;  border-radius: 40px;" onclick="lets_play()">Lets
+                Play</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

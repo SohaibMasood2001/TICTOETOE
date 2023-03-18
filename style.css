@@ -1,0 +1,134 @@
+
+body {
+    background-color: rgb(9, 15, 67);
+}
+
+.game-main {
+    width: 800px;
+    height: 500px;
+    border: 10px solid springgreen;
+    margin-left: 350px;
+    margin-top: 70px;
+    background-color: black;
+    padding: 20px;
+
+
+
+}
+
+.box-main-div {
+    display: none;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 10px;
+    margin-top: 35px;
+    margin-left: 42px;
+    background-color: brown;
+    padding: 10px;
+    width: fit-content;
+}
+
+.pl-box {
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(238, 252, 200);
+
+}
+
+.pl-box:hover {
+    cursor: pointer;
+    background-color: rgb(210, 255, 77);
+}
+
+.head {
+    border-bottom: 10px solid springgreen;
+    color: rgb(245, 246, 255);
+    font-size: 25px;
+    background-color: brown;
+    display: block;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 840px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.infos {
+    width: 340px;
+    height: 340px;
+
+    margin-top: -346px;
+    margin-left: 437px;
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.t-row {
+    color: wheat;
+    border: 2px solid red;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px
+}
+
+.name-input {
+    border: 10px solid springgreen;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    margin-left: 29%;
+    margin-top: 10%;
+
+}
+
+#play:hover {
+    background-color: springgreen;
+    cursor: pointer;
+}
+
+#x-img,
+#o-img {
+    width: 40px;
+    height: 40px;
+}
+
+#reset-btn {
+    width: 271px;
+    height: 40px;
+    background-color: rgb(210, 255, 77);
+    color: black;
+    font-size: 25px;
+    border: none;
+}
+
+#reset-btn:hover {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+.result {
+    color: rgb(210, 255, 77);
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 20.5%;
+    display: none;
+}
